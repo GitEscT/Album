@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid</title>
+    <style>
+    body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    }
+
+    h1 {
+    color: #333;
+    }
+
+    .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 8px;
+    padding: 80px;
+    }
+
+    .item {
+    border-radius: 1px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+    overflow: hidden;
+    }
+
+    .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    .img1 { grid-column: span 2; grid-row: span 2; }
+    .img2 { grid-column: span 1; grid-row: span 1; }
+    .img3 { grid-column: span 1; grid-row: span 2; }
+    .img4 { grid-column: span 1; grid-row: span 2; }
+    .img5 { grid-column: span 1; grid-row: span 1; }
+    .img6 { grid-column: span 1; grid-row: span 1; }
+    .img7 { grid-column: span 1; grid-row: span 1; }
+    .img8 { grid-column: span 1; grid-row: span 1; }
+    .img9 { grid-column: span 1; grid-row: span 1; }
+    .img10 { grid-column: span 1; grid-row: span 1; }
+    </style>
+</head>
+<body>
+    <h1>Album</h1>
+    <div class="container">
+        <div class="item img1"><img src="foto1.jpg" alt="_"></div>
+        <div class="item img2"><img src="foto2.jpg" alt="_"></div>
+        <div class="item img3"><img src="foto3.jpg" alt="_"></div>
+        <div class="item img4"><img src="foto4.jpg" alt="_"></div>
+        <div class="item img5"><img src="foto5.jpg" alt="_"></div>
+        <div class="item img6"><img src="foto6.jpg" alt="_"></div>
+        <div class="item img7"><img src="foto7.jpg" alt="_"></div>
+        <div class="item img8"><img src="foto8.jpg" alt="_"></div>
+        <div class="item img9"><img src="foot9.jpg" alt="_"></div>
+        <div class="item img10"><img src="foto10.jpg" alt="_"></div>
+    </div>
+</body>
+</html>
